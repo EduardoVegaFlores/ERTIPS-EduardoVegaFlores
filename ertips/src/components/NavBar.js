@@ -1,10 +1,12 @@
 import erTipsLogo from '../assets/images/logoErtips.png';
 import erLogoOficial from '../assets/images/iconoOficial.png';
+import CartWidget from '../components/CarWidget';
+
 
 function NavBar () {
     return <>
     
-    <nav className="fixed-top navbar navbar-expand-lg navbar-dark" style= {{backgroundcolor: 'black'}}> 
+    <nav className="navbar navbar-expand-lg navbar-dark" style= {{backgroundcolor: 'black'}}> 
     <div className="container-fluid">
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
         aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +36,15 @@ function NavBar () {
             <a className="nav-link btn btn-dark btn-sm" href="./Contactanos.html">CONTACTANOS</a>
           </li>
         </ul> 
-        <a className="navbar-brand d-none d-lg-block" href="#"><img className="img-fluid"
+        <a className="navbar-brand d-none d-lg-block"><img className="img-fluid"
             src= {erLogoOficial} alt="" width="150" height="150" /></a>
       </div>
+      <CartWidget/>
     </div>
+
   </nav>
     </>;
 }
+
 
 export default NavBar;
